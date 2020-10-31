@@ -5,6 +5,7 @@ import './Map.css';
 const Map = (props) => {
     const mapRef = useRef();
     const { center, zoom } = props;
+
     let cood = {
         lat: parseFloat(center.lat),
         lng: parseFloat(center.lng),
