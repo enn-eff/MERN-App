@@ -10,6 +10,7 @@ import Users from './user/pages/User';
 import Places from './places/pages/NewPlace';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import UserPlaces from './places/pages/UserPlaces';
+import UpdatePlace from './places/pages/UpdatePlace';
 
 function App() {
     return (
@@ -23,6 +24,11 @@ function App() {
                         exact
                         path='/:userId/places'
                         component={UserPlaces}
+                    />
+                    <Route
+                        exact
+                        path='/places/:placeId'
+                        component={UpdatePlace}
                     />
                     <Redirect to='/' />
                 </Switch>
